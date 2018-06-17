@@ -3,12 +3,12 @@ package in.co.akashkumar.quakereport;
 public class Earthquake {
     private String magnitude;
     private String location;
-    private String date;
+    private long timeInMilliseconds;
 
-    public Earthquake(String magnitude, String location, String date) {
+    public Earthquake(String magnitude, String location, long mTimeInMilliseconds) {
         this.magnitude = magnitude;
         this.location = location;
-        this.date = date;
+        this.timeInMilliseconds = mTimeInMilliseconds;
     }
 
     public String getMagnitude() {
@@ -19,7 +19,7 @@ public class Earthquake {
         return location;
     }
 
-    public String getDate() {
-        return date;
+    public long getTimeInMilliseconds() {
+        return timeInMilliseconds;
     }
 }

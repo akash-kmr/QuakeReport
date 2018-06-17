@@ -55,9 +55,7 @@ public final class QueryUtils {
                 JSONObject properties = currentEarthquake.getJSONObject("properties");
                 String magnitude = properties.getString("mag");
                 String location = properties.getString("place");
-                long timeUnix = properties.getLong("time");
-                SimpleDateFormat dateFormatter = new SimpleDateFormat("MMM DD, yyyy");
-                String time = dateFormatter.format(new Date(timeUnix));
+                long time = properties.getLong("time");
                 earthquakes.add(new Earthquake(magnitude, location, time));
             }
             // TODO: Parse the response given by the SAMPLE_JSON_RESPONSE string and
