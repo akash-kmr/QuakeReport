@@ -1,17 +1,17 @@
 package in.co.akashkumar.quakereport;
 
 public class Earthquake {
-    private String magnitude;
+    private double magnitude;
     private String location;
     private long timeInMilliseconds;
 
-    public Earthquake(String magnitude, String location, long mTimeInMilliseconds) {
+    public Earthquake(double magnitude, String location, long timeInMilliseconds) {
         this.magnitude = magnitude;
         this.location = location;
-        this.timeInMilliseconds = mTimeInMilliseconds;
+        this.timeInMilliseconds = timeInMilliseconds;
     }
 
-    public String getMagnitude() {
+    public double getMagnitude() {
         return magnitude;
     }
 
